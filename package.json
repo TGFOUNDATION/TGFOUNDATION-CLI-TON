@@ -1,0 +1,54 @@
+{
+  "name": "tg-foundation-cli",
+  "version": "2.0.0",
+  "description": "Production-ready multi-language TG FOUNDATION utility CLI with Telegram bot mode and TON deploy scaffold.",
+  "type": "module",
+  "license": "MIT",
+  "author": "TG FOUNDATION",
+  "bin": {
+    "tgf": "./bin/tgf.js",
+    "tg": "./bin/tgf.js"
+  },
+  "scripts": {
+    "start": "node ./bin/tgf.js",
+    "dev": "node ./bin/tgf.js --help",
+    "bot": "node ./bin/tgf.js bot",
+    "check": "node ./bin/tgf.js status --lang en",
+    "prepare": "chmod +x ./bin/tgf.js"
+  },
+  "dependencies": {
+    "@ton/crypto": "^3.3.0",
+    "@ton/ton": "^15.1.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "conf": "^12.0.0",
+    "dotenv": "^16.4.7",
+    "inquirer": "^9.3.7",
+    "ora": "^8.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "telegraf": "^4.16.3",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ton",
+    "jetton",
+    "cli",
+    "utility",
+    "telegram",
+    "token",
+    "telegram-bot",
+    "multilanguage"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    ".env.example"
+  ]
+}
